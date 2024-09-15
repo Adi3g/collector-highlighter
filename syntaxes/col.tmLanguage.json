@@ -1,0 +1,37 @@
+{
+    "scopeName": "source.col",
+    "patterns": [
+        {
+            "name": "comment.line.number-sign.col",
+            "match": "#.*$"
+        },
+        {
+            "name": "keyword.control.col",
+            "match": "\\b(VERSION|SOURCE|TRANSFORM|OUTPUT|TYPE|OPTIONS|HOST|PORT|USERNAME|PASSWORD|DATABASE|QUERY|FIELD|FORMAT|DEFAULT|RENAME|METHOD|ENDPOINT|HEADERS|QUERY_PARAMS|EXTRACT|CONDITIONAL|TRUE|FALSE)\\b"
+        },
+        {
+            "name": "constant.language.boolean.col",
+            "match": "\\b(true|false|null)\\b"
+        },
+        {
+            "name": "string.quoted.double.col",
+            "match": "\"[^\"]*\""
+        },
+        {
+            "name": "constant.numeric.col",
+            "match": "\\b\\d+\\.?\\d*\\b"
+        },
+        {
+            "name": "punctuation.bracket.col",
+            "match": "[{}]"
+        },
+        {
+            "name": "punctuation.separator.col",
+            "match": ":"
+        },
+        {
+            "name": "punctuation.separator.key-value.col",
+            "match": "="
+        }
+    ]
+}

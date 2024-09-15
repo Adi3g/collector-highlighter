@@ -1,0 +1,52 @@
+{
+  "name": "collector-highlighter",
+  "displayName": "Collector Highlighter",
+  "description": "Syntax highlighting for .col files.",
+  "repository": "https://github.com/Adi3g/collector-highlighter",
+  "author": "Adib Grouz",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+    "contributes": {
+        "languages": [
+            {
+                "id": "col",
+                "aliases": ["Collector", "col"],
+                "extensions": [".col"],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "col",
+                "scopeName": "source.col",
+                "path": "./syntaxes/col.tmLanguage.json"
+            }
+        ]
+    },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.93.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "eslint": "^9.9.1",
+    "typescript": "^5.5.4",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
