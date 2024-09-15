@@ -2,7 +2,11 @@
   "name": "collector-highlighter",
   "displayName": "Collector Highlighter",
   "description": "Syntax highlighting for .col files.",
-  "repository": "https://github.com/Adi3g/collector-highlighter",
+  "publisher": "AdibGrouz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Adi3g/collector-highlighter"
+},
   "author": "Adib Grouz",
   "version": "0.0.1",
   "engines": {
@@ -11,6 +15,12 @@
   "categories": [
     "Other"
   ],
+  "keywords": [
+    "col",
+    "collector",
+    "syntax highlighting",
+    "vscode"
+],
   "activationEvents": [],
   "main": "./out/extension.js",
     "contributes": {
